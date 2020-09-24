@@ -1809,6 +1809,7 @@ linux-workflow: &linux-workflow
             only:
               - develop
               - v5.0-release
+              - issue-8241
         requires:
           - build-npm-package
     - build-binary:
@@ -1821,6 +1822,7 @@ linux-workflow: &linux-workflow
             only:
               - develop
               - v5.0-release
+              - issue-8241
         requires:
           - build-binary
     - test-npm-module-on-minimum-node-version:
@@ -1878,6 +1880,7 @@ linux-workflow: &linux-workflow
             only:
               - develop
               - v5.0-release
+              - issue-8241
         requires:
           - upload-npm-package
           - upload-binary
